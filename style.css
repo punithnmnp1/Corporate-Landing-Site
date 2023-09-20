@@ -1,0 +1,215 @@
+/*Home page */
+
+.hp{
+    background-image:url(/assets/Homebg\ img.jpg);
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.navbar{
+    position: sticky;
+    top:0px;
+}
+
+.text {
+    text-align: center;
+    color: rgb(34, 43, 43);
+    padding-top: 250px;
+    font-size: 1.5cm;
+}
+
+
+.intro{
+    text-align: center;
+    color: rgb(34, 43, 43);
+    font-size: large;
+    text-wrap: right;
+    font-size: 0.75cm; 
+}
+
+
+
+/* home page ends */
+
+/* about page start */
+.ab{
+  background:  #f8f9fa;
+  width: 100%;
+  height: fit-content;
+}
+
+/* about page ends */
+
+/*Services*/
+
+section.main-program-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .main-program-div {
+    color: black;
+    display: grid;
+    grid-template-columns: 10rem;
+    grid-template-rows: 35% 10% auto;
+    justify-items: center;
+    padding: 2rem;
+  }
+
+/*Services End*/
+
+/*Services Animation*/
+
+  .main-program-div:hover {
+    border: 1px solid var(--white);
+  }
+  
+  section.main-program-section:hover .main-program-div {
+    opacity: 0.2;
+    filter: blur(2px);
+  }
+  
+  section.main-program-section .main-program-div:hover {
+    opacity: 1;
+    filter: blur(0);
+  }
+
+/*Services Animation End*/
+
+/*Testimonials*/
+#testimonials
+{
+  margin: 100px 0;
+}
+
+.testimonials{
+  border-left: 4px solid #7b1798;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.testimonials img{
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  margin:0 10px;
+}
+
+/*Contact */
+#social-media{
+  background: #f8f9fa;
+  padding: 100px 0;
+}
+
+#social-media p{
+  font-size: 36px;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+.social-icons img{
+  width: 60px;
+  transition:0.5s;
+}
+
+.social-icons a:hover img{
+  transform: translateY(-10px);
+
+}
+
+/*Contact animation*/
+.cf-div:hover {
+  transform: translateY(-10px);
+}
+
+
+
+
+.cf-bg{
+  background: #f8f9fa;
+  width: 100%;
+  height: fit-content;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+
+
+/*Subscribe*/
+.subscribe{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgb(0,0,0,0.8),rgba(175, 162, 162, 0.8)),url(/assets/emai\ lBg-img.jpg);
+  background-size: cover;
+  background-position: center;
+  padding:10px 10%;
+  color: #fff;
+}
+  
+.subscribe h3{
+  margin-top: 15%;
+  font-weight: 400;
+  font-size: 30px;
+}
+
+.subscribe h1{
+  margin-top: 30px;
+  font-size: 50px;
+
+}
+
+.subscribe p{
+  margin: 10px 0 50px;
+
+}
+
+.title{
+  background-color: #fff;
+  display: flex;
+  width: fit-content;
+}
+
+.email {
+  border: 0;
+  outline: none;
+  padding: 10px 20px;
+  height: 70px;
+  width:400px;
+  font-size: 16px;
+
+}
+
+.sendbtn {
+  background: #fcae1e;
+  Border: none;
+  outline: none;
+  height: 70px;
+  width: 100px;
+  cursor: pointer;
+
+}
+
+span{
+  color: #fff;
+  margin-top: 10px;
+  display: block;
+
+}
+
+/*Footer*/
+#footer{
+  
+  background-color:gray ;
+  color:#fff;
+  padding: 20px;
+  text-align: center;
+}
+
+
+
+
