@@ -24,7 +24,7 @@ This repository contains the source code for a gym website, implemented as a sin
 # Installation
 -To run the CorporateLanding Site locally as a single page application, follow these steps:
 
--Clone this repository: git clone https://github.com/punithnmnp1/Corporate-Landing-Site.git
+-Clone this repository: git clone https://github.com/punithnmnp1/CorporateLandingSite.git
 
 -Navigate to the project directory: cd Corporate-Landing-Site
 
