@@ -1,7 +1,7 @@
 
 
 
-# Corporate-Landing-Site
+# CorporateLandingSite
 
 This repository contains the source code for a Corporate website, implemented as a two page application (TPA) using HTML, CSS, JavaScript and MongoDb.
 
