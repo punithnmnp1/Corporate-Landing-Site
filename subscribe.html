@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <scrip src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css" class="rel">
+</head>
+<body>
+    <div class="subscribe">
+        <h3>Coming Soon!</h3>
+        <h1>Our Brand New<br>Website Is On It's Way</h1>
+        <p>Subscribe for more details.</p>
+      <form class="title" name="submit-to-google-sheet" action="submit-to-google-sheet" >
+        <input class="email" id="Email" type="email" name="Email" placeholder="Your email id">
+        <button class="sendbtn" type="submit"><img src="/assets/send-icon.png" width="30px"></button>
+      </form>
+      <span id="msg"></span>
+      </div>
+
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzVDAV7MOMnUHiyq4B0kI-BoEBZ0-7mgQKoZBUoe6Sro370HbbB3x_2qHVP0gOC1SiL/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+              msg.innerHTML = "Thank You for Subscribing!"
+              setTimeout(function(){
+                msg.innerHTML = ""
+              },5000)
+              form.reset()
+    
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    
+      </script>
+</body>
+</html>
+
+  
