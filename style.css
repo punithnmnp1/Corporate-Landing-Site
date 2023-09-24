@@ -39,7 +39,10 @@
   width: 100%;
   height: fit-content;
 }
-
+@media screen and (max-width: 600px) {
+  .ab {
+    width: 250px; }
+  }
 /* about page ends */
 
 /*Services*/
@@ -114,7 +117,9 @@ section.main-program-section {
 .social-icons img{
   width: 60px;
   transition:0.5s;
+  
 }
+
 
 .social-icons a:hover img{
   transform: translateY(-10px);
@@ -155,6 +160,15 @@ section.main-program-section {
   width: 500px;
   transition:0.5s;
 }
+.subs-icons img:hover {
+  transform: translateY(-10px);
+}
+
+@media screen and (max-width: 600px) {
+  .subs-icons img {
+    width: 250px; }
+  }
+
 
 .subscribe{
   width: 100%;
@@ -224,7 +238,6 @@ span{
   padding: 20px;
   text-align: center;
 }
-
 
 
 
