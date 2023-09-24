@@ -14,6 +14,8 @@ This repository contains the source code for a Corporate website, implemented as
 
 -MongoDb database
 
+-Google Spreadsheets
+
 # Silent Features :
 -Responsive Design.
 
