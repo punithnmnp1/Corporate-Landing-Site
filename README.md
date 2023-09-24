@@ -45,13 +45,13 @@ Use the website's services. If you have any questions about the corporate form, 
 
 The webpage has a "get in touch" and "subscribe" option. The "get in touch" option allows users to submit their input and connect with corporate employees. The "subscribe" button allows corporate employees to see which users have liked the webpage and subscribed to it.
 
-index.html: Update the hero heading, video/image, and call-to-action buttons.
+**index.html**: Update the hero heading, video/image, and call-to-action buttons.
 
-style.css: Modify the styles for the hero section, such as background colors, typography, button styles, and scroll down indicator. Feel free to customize the code and design to align with your corporate unique identity and goals.
+**style.css**: Modify the styles for the hero section, such as background colors, typography, button styles, and scroll down indicator. Feel free to customize the code and design to align with your corporate unique identity and goals.
 
-subsrcibe.html:This webpage will give details about subscribing to the particular website. 
+**subsrcibe.html**:This webpage will give details about subscribing to the particular website. 
 
-app.js:This is a JavaScript file in which the MongoDB connection will be done.
+**app.js**:This is a JavaScript file in which the MongoDB connection will be done.
 
 If you find any issues with the website or have suggestions for improvement, please feel free to submit a pull request or open an issue in this repository. Your contributions are welcome!
 
