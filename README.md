@@ -41,4 +41,5 @@ index.html: Update the hero heading, video/image, and call-to-action buttons.
 style.css: Modify the styles for the hero section, such as background colors, typography, button styles, and scroll down indicator. Feel free to customize the code and design to align with your corporate unique identity and goals.
 Contributing
 If you find any issues with the website or have suggestions for improvement, please feel free to submit a pull request or open an issue in this repository. Your contributions are welcome!
->>>>>>> 4702cad3fc98ddaa757a3063d42c146702bd2fcb
+# Project Live URL:https://punithnmnp1.github.io/CorporateLandingSite/
+
