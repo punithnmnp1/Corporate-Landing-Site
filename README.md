@@ -32,10 +32,6 @@ This repository contains the source code for a Corporate website, implemented as
 
 -Navigate to the project directory: cd Corporate-Landing-Site
 
--execute this commands in the terminal 
--  **npm install express**
--  **node app.js**
-
 -Open the index.html file in your web browser.
 
 # Usage
