@@ -16,6 +16,7 @@
           <a class="navbar-brand" href="./index.html">
             <img src="assets/leonhart.jpg" 
             width="50"
+            
             height="50" >
             Leonhart</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +29,6 @@
               <a class="nav-link" href="index.html#services">Services</a>
               <a class="nav-link" href="index.html#testinomials">Testimonials</a>
               <a class="nav-link" href="index.html#contact">Contact</a>
-              <a class="nav-link" href="subscribe.html">Subscribe</a>
               
           </div>
           </div>
@@ -219,23 +219,21 @@
   <div class="col-lg-5 col-md-12">
     
     <!-- Form contact start -->
-
-    
     
     <section class="cf-section">
     <form class="p-5 " 
-    action="http://localhost:3000/submit-message"
-    method="post"
+    action="https://formsubmit.co/50c0f51dfc0db3b9d539e550930a421c"
+    method="POST"
     data-form>
       <div class="cf-div">
       <div class="md-form form-m">
-        <input type="text" id="name" class="form-control form-control-m" name="name" placeholder="Your Name"required/>
+        <input type="text" id="fullname" class="form-control form-control-m" name="name" placeholder="Your Name" required/>
       </div>
     </div>
       <label></label>
       <div class="cf-div">
       <div class="md-form form-m">
-        <input type="email" id="email" class="form-control form-control-m" name="email" placeholder="email@gmail.com" required/>
+        <input type="email" id="email_id" class="form-control form-control-m" name="email" placeholder="email@gmail.com" required/>
         <label></label>
       </div>
     </div>
@@ -280,14 +278,38 @@
   <!--Section: Contact end-->
 
   <!--Section: Subscribe -->
-  <div class="subs">
-  <h3>Coming Soon!</h3>
-        <h1>Our Brand New<br>Website Is On It's Way</h1>
-        <p>Subscribe for more details.</p>
-        <div class="subs-icons">
-  <a href="subscribe.html"><img src="images/social media/subscribe-button-bell.avif"></a>
-</div>
-</div>
+
+  <div class="subscribe">
+    <h3>Coming Soon!</h3>
+    <h1>Our Brand New<br>Website Is On It's Way</h1>
+    <p>Subscribe for more details.</p>
+  <form class="title" name="submit-to-google-sheet">
+    <input class="email" type="email" name="Email Subsrcibed" placeholder="Your email id">
+    <button class="sendbtn" type="submit"><img src="/assets/send-icon.png" width="30px"></button>
+  </form>
+  <span id="msg"></span>
+  </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzVDAV7MOMnUHiyq4B0kI-BoEBZ0-7mgQKoZBUoe6Sro370HbbB3x_2qHVP0gOC1SiL/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+          msg.innerHTML = "Thank You for Subscribing!"
+          setTimeout(function(){
+            msg.innerHTML = ""
+          },5000)
+          form.reset()
+
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+
+  </script>
 
   <!--Section: Footer-->
   <section id="footer">          
