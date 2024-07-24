@@ -12,9 +12,8 @@ This repository contains the source code for a Corporate website, implemented as
 
 -JavaScript 
 
--MongoDb database
+-Form Submit
 
--Google Spreadsheets
 
 # Silent Features :
 -Responsive Design.
